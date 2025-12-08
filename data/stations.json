@@ -1,0 +1,116 @@
+{
+  "line": "Mumbai Metro Line 9 (Dahisar - Mira Bhayandar)",
+  "stations": [
+    {
+      "id": 1,
+      "name": "Dahisar East",
+      "code": "DHE",
+      "lat": 19.2583,
+      "lng": 72.8647,
+      "facilities": ["Parking", "Wheelchair Access", "Restrooms"],
+      "schedule": {
+        "firstTrain": "05:30",
+        "lastTrain": "23:30",
+        "frequency": "6 minutes"
+      },
+      "connections": ["Western Railway - Dahisar"]
+    },
+    {
+      "id": 2,
+      "name": "Anand Nagar",
+      "code": "ANN",
+      "lat": 19.2650,
+      "lng": 72.8580,
+      "facilities": ["Parking", "Wheelchair Access"],
+      "schedule": {
+        "firstTrain": "05:32",
+        "lastTrain": "23:32",
+        "frequency": "6 minutes"
+      },
+      "connections": []
+    },
+    {
+      "id": 3,
+      "name": "Ovaripada",
+      "code": "OVP",
+      "lat": 19.2720,
+      "lng": 72.8510,
+      "facilities": ["Wheelchair Access", "Restrooms"],
+      "schedule": {
+        "firstTrain": "05:34",
+        "lastTrain": "23:34",
+        "frequency": "6 minutes"
+      },
+      "connections": []
+    },
+    {
+      "id": 4,
+      "name": "Mira Bhayandar",
+      "code": "MBR",
+      "lat": 19.2800,
+      "lng": 72.8450,
+      "facilities": ["Parking", "Wheelchair Access", "Restrooms", "Food Court"],
+      "schedule": {
+        "firstTrain": "05:36",
+        "lastTrain": "23:36",
+        "frequency": "6 minutes"
+      },
+      "connections": ["Western Railway - Mira Road"]
+    },
+    {
+      "id": 5,
+      "name": "Bhayandar East",
+      "code": "BHE",
+      "lat": 19.2900,
+      "lng": 72.8520,
+      "facilities": ["Parking", "Wheelchair Access"],
+      "schedule": {
+        "firstTrain": "05:38",
+        "lastTrain": "23:38",
+        "frequency": "6 minutes"
+      },
+      "connections": ["Western Railway - Bhayandar"]
+    },
+    {
+      "id": 6,
+      "name": "Kashigaon",
+      "code": "KSG",
+      "lat": 19.2980,
+      "lng": 72.8600,
+      "facilities": ["Wheelchair Access"],
+      "schedule": {
+        "firstTrain": "05:40",
+        "lastTrain": "23:40",
+        "frequency": "6 minutes"
+      },
+      "connections": []
+    },
+    {
+      "id": 7,
+      "name": "Ghodbunder",
+      "code": "GBD",
+      "lat": 19.3050,
+      "lng": 72.8680,
+      "facilities": ["Parking", "Wheelchair Access", "Restrooms"],
+      "schedule": {
+        "firstTrain": "05:42",
+        "lastTrain": "23:42",
+        "frequency": "6 minutes"
+      },
+      "connections": []
+    }
+  ],
+  "fares": {
+    "minimum": 10,
+    "perKm": 2.5,
+    "currency": "INR"
+  },
+  "alerts": [
+    {
+      "id": 1,
+      "type": "info",
+      "message": "Metro services running normally",
+      "active": true
+    }
+  ]
+}

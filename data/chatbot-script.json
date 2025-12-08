@@ -1,0 +1,69 @@
+{
+  "greeting": "Hello! I'm Mira, your Digital Shield assistant. How can I help you stay safe online today?",
+  "fallback": "I'm not sure I understand. Could you try rephrasing that, or choose from the options below?",
+  "conversations": [
+    {
+      "id": "phishing",
+      "keywords": ["phishing", "email", "scam", "fake email", "suspicious"],
+      "question": "How do I identify phishing emails?",
+      "response": "Great question! Here are key signs of phishing emails:\n\n1. **Urgent language** - 'Act now!' or 'Account suspended!'\n2. **Suspicious sender** - Check if the email domain matches the company\n3. **Generic greetings** - 'Dear Customer' instead of your name\n4. **Spelling errors** - Professional companies proofread\n5. **Suspicious links** - Hover before clicking to see the real URL\n\nWould you like to take a quick phishing quiz?",
+      "followUp": ["quiz_phishing", "password_tips", "main_menu"]
+    },
+    {
+      "id": "password_tips",
+      "keywords": ["password", "secure", "strong password", "password tips"],
+      "question": "How do I create a strong password?",
+      "response": "Here's how to create unbreakable passwords:\n\n1. **Length matters** - Use at least 12 characters\n2. **Mix it up** - Combine uppercase, lowercase, numbers, symbols\n3. **Avoid personal info** - No birthdays, pet names, or addresses\n4. **Use passphrases** - 'Purple$Elephant@Dancing!42' is better than 'P@ssw0rd'\n5. **Unique passwords** - Different password for each account\n\nConsider using a password manager to keep track!",
+      "followUp": ["two_factor", "phishing", "main_menu"]
+    },
+    {
+      "id": "two_factor",
+      "keywords": ["2fa", "two factor", "authentication", "otp", "verification"],
+      "question": "What is Two-Factor Authentication?",
+      "response": "Two-Factor Authentication (2FA) adds an extra security layer:\n\n**How it works:**\n1. Enter your password (something you know)\n2. Verify with a code sent to your phone (something you have)\n\n**Benefits:**\n- Even if hackers get your password, they can't access your account\n- You get alerts when someone tries to log in\n- Most major services offer it for free\n\n**Enable 2FA on:** Email, banking apps, social media, and shopping sites!",
+      "followUp": ["password_tips", "social_media", "main_menu"]
+    },
+    {
+      "id": "social_media",
+      "keywords": ["social media", "facebook", "instagram", "privacy", "sharing"],
+      "question": "How do I stay safe on social media?",
+      "response": "Stay safe while staying connected:\n\n1. **Privacy settings** - Review who can see your posts\n2. **Location sharing** - Disable automatic location tags\n3. **Friend requests** - Only accept people you know\n4. **Personal info** - Never share phone, address, or financial details\n5. **Think before posting** - Once online, always online\n6. **Report & block** - Don't hesitate to report suspicious accounts\n\nWant to learn about specific platform settings?",
+      "followUp": ["two_factor", "scam_calls", "main_menu"]
+    },
+    {
+      "id": "scam_calls",
+      "keywords": ["call", "phone", "scam call", "fraud", "otp sharing"],
+      "question": "How do I identify scam calls?",
+      "response": "Protect yourself from phone scams:\n\n**Red flags:**\n- Caller claims to be from bank/government and asks for OTP\n- Threatens arrest or account closure\n- Offers prizes you never entered for\n- Pressures you to act immediately\n\n**Remember:**\n- Banks NEVER ask for OTP or PIN over phone\n- Government agencies don't threaten via calls\n- When in doubt, hang up and call the official number\n\nStay alert, stay safe!",
+      "followUp": ["phishing", "password_tips", "main_menu"]
+    },
+    {
+      "id": "quiz_phishing",
+      "keywords": ["quiz", "test", "practice"],
+      "question": "Take the phishing quiz",
+      "response": "Let's test your phishing detection skills!\n\n**Scenario 1:**\nYou receive an email from 'amaz0n-support@gmail.com' saying your account is locked.\n\nIs this email legitimate?\n\n(Hint: Look carefully at the sender address!)",
+      "followUp": ["quiz_answer", "main_menu"]
+    },
+    {
+      "id": "quiz_answer",
+      "keywords": ["answer", "no", "fake", "scam"],
+      "question": "It's fake!",
+      "response": "Correct! Here's why:\n\n1. **Wrong domain** - Amazon uses @amazon.com, not @gmail.com\n2. **Number substitution** - 'amaz0n' uses zero instead of 'o'\n3. **Urgency tactic** - 'Account locked' creates panic\n\nYou're getting good at this! Your Digital Shield score just increased.",
+      "followUp": ["phishing", "password_tips", "main_menu"]
+    },
+    {
+      "id": "main_menu",
+      "keywords": ["menu", "help", "options", "start"],
+      "question": "Show main menu",
+      "response": "Here's what I can help you with:\n\n1. Identifying phishing emails\n2. Creating strong passwords\n3. Two-Factor Authentication\n4. Social media safety\n5. Recognizing scam calls\n6. Take a security quiz\n\nJust type your question or click an option!",
+      "followUp": ["phishing", "password_tips", "two_factor", "social_media", "scam_calls"]
+    }
+  ],
+  "quickReplies": [
+    {"id": "phishing", "label": "Phishing Emails"},
+    {"id": "password_tips", "label": "Strong Passwords"},
+    {"id": "two_factor", "label": "2FA Setup"},
+    {"id": "social_media", "label": "Social Media Safety"},
+    {"id": "scam_calls", "label": "Scam Calls"}
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "categories": [
+    {"id": "clothing", "name": "Clothing", "icon": "fa-tshirt"},
+    {"id": "food", "name": "Food & Snacks", "icon": "fa-utensils"},
+    {"id": "handicrafts", "name": "Handicrafts", "icon": "fa-hands"},
+    {"id": "electronics", "name": "Electronics", "icon": "fa-mobile-alt"},
+    {"id": "services", "name": "Services", "icon": "fa-concierge-bell"}
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Handwoven Cotton Saree",
+      "category": "clothing",
+      "price": 1200,
+      "description": "Beautiful handwoven cotton saree with traditional patterns",
+      "image": "saree.jpg",
+      "seller": "Mira Textiles",
+      "rating": 4.5,
+      "stock": 15
+    },
+    {
+      "id": 2,
+      "name": "Homemade Mango Pickle",
+      "category": "food",
+      "price": 150,
+      "description": "Authentic homemade mango pickle, no preservatives",
+      "image": "pickle.jpg",
+      "seller": "Bhayandar Kitchen",
+      "rating": 4.8,
+      "stock": 50
+    },
+    {
+      "id": 3,
+      "name": "Bamboo Craft Basket",
+      "category": "handicrafts",
+      "price": 350,
+      "description": "Eco-friendly handcrafted bamboo storage basket",
+      "image": "basket.jpg",
+      "seller": "Green Crafts Co",
+      "rating": 4.3,
+      "stock": 20
+    },
+    {
+      "id": 4,
+      "name": "Mobile Screen Protector",
+      "category": "electronics",
+      "price": 199,
+      "description": "Tempered glass screen protector for all phone models",
+      "image": "protector.jpg",
+      "seller": "TechMira",
+      "rating": 4.1,
+      "stock": 100
+    },
+    {
+      "id": 5,
+      "name": "Tailoring Service",
+      "category": "services",
+      "price": 500,
+      "description": "Professional tailoring and alterations",
+      "image": "tailoring.jpg",
+      "seller": "Stitch Perfect",
+      "rating": 4.7,
+      "stock": 999
+    },
+    {
+      "id": 6,
+      "name": "Organic Masala Set",
+      "category": "food",
+      "price": 450,
+      "description": "Set of 5 organic spices from local farms",
+      "image": "masala.jpg",
+      "seller": "Spice Garden",
+      "rating": 4.6,
+      "stock": 30
+    },
+    {
+      "id": 7,
+      "name": "Hand-painted Diyas",
+      "category": "handicrafts",
+      "price": 80,
+      "description": "Set of 6 hand-painted traditional diyas",
+      "image": "diyas.jpg",
+      "seller": "Diwali Decor",
+      "rating": 4.9,
+      "stock": 200
+    },
+    {
+      "id": 8,
+      "name": "Cotton Kurta",
+      "category": "clothing",
+      "price": 650,
+      "description": "Comfortable cotton kurta in various colors",
+      "image": "kurta.jpg",
+      "seller": "Mira Textiles",
+      "rating": 4.4,
+      "stock": 25
+    }
+  ],
+  "storeTemplates": [
+    {
+      "id": "minimal",
+      "name": "Minimal",
+      "description": "Clean and simple design",
+      "primaryColor": "#2563eb",
+      "layout": "grid"
+    },
+    {
+      "id": "vibrant",
+      "name": "Vibrant",
+      "description": "Bold colors and patterns",
+      "primaryColor": "#dc2626",
+      "layout": "list"
+    },
+    {
+      "id": "elegant",
+      "name": "Elegant",
+      "description": "Sophisticated and professional",
+      "primaryColor": "#7c3aed",
+      "layout": "masonry"
+    }
+  ],
+  "storeComponents": [
+    {"id": "header", "name": "Store Header", "icon": "fa-heading", "type": "layout"},
+    {"id": "banner", "name": "Hero Banner", "icon": "fa-image", "type": "media"},
+    {"id": "products", "name": "Product Grid", "icon": "fa-th", "type": "content"},
+    {"id": "featured", "name": "Featured Item", "icon": "fa-star", "type": "content"},
+    {"id": "about", "name": "About Section", "icon": "fa-info-circle", "type": "content"},
+    {"id": "contact", "name": "Contact Form", "icon": "fa-envelope", "type": "form"},
+    {"id": "testimonials", "name": "Testimonials", "icon": "fa-quote-left", "type": "content"},
+    {"id": "footer", "name": "Store Footer", "icon": "fa-shoe-prints", "type": "layout"}
+  ]
+}
