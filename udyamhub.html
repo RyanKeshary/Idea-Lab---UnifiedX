@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Udyam Hub - Build your online store with our no-code builder">
+  <title>Udyam Hub - UnifiedX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="header scrolled" role="banner">
+    <div class="header-content">
+      <a href="index.html" class="logo" aria-label="UnifiedX Home">
+        <div class="logo-icon">
+          <i class="fas fa-city"></i>
+        </div>
+        <span>UnifiedX</span>
+      </a>
+
+      <nav class="nav-menu" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="transit.html" class="nav-link">Transit</a>
+        <a href="digitalshield.html" class="nav-link">Shield</a>
+        <a href="udyamhub.html" class="nav-link active">Udyam</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle btn-icon" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+        </button>
+        
+        <div class="auth-only user-menu" style="display: none;">
+          <div class="user-avatar" tabindex="0" role="button" aria-haspopup="true" aria-label="User menu">
+            U
+          </div>
+          <div class="user-dropdown" role="menu">
+            <div class="user-dropdown-header">
+              <h4 class="user-name">User</h4>
+              <p class="user-email">user@example.com</p>
+            </div>
+            <div class="user-dropdown-menu">
+              <a href="dashboard.html" role="menuitem"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+              <button class="logout-btn logout" role="menuitem"><i class="fas fa-sign-out-alt"></i> Logout</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="guest-only">
+          <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
+        </div>
+
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-menu" role="navigation" aria-label="Mobile navigation">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="dashboard.html" class="nav-link">Dashboard</a>
+    <a href="transit.html" class="nav-link">Transit</a>
+    <a href="digitalshield.html" class="nav-link">Shield</a>
+    <a href="udyamhub.html" class="nav-link active">Udyam</a>
+  </nav>
+
+  <main id="main-content" class="module-page">
+    <div class="container">
+      <div class="page-header">
+        <div class="page-header-icon udyam">
+          <i class="fas fa-store"></i>
+        </div>
+        <div class="page-header-text">
+          <h1>Udyam Hub</h1>
+          <p>Build your online store with our no-code drag-and-drop builder</p>
+        </div>
+      </div>
+
+      <div class="store-builder-content">
+        <div class="components-panel">
+          <h3><i class="fas fa-puzzle-piece"></i> Components</h3>
+          <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1rem;">Drag components to the canvas to build your store</p>
+          <div class="component-list"></div>
+        </div>
+
+        <div class="builder-canvas">
+          <div class="canvas-header">
+            <h3><i class="fas fa-palette"></i> Store Canvas</h3>
+            <div class="canvas-actions">
+              <button class="btn btn-ghost btn-sm clear-canvas-btn">
+                <i class="fas fa-trash"></i> Clear
+              </button>
+              <button class="btn btn-ghost btn-sm preview-btn">
+                <i class="fas fa-eye"></i> Preview
+              </button>
+              <button class="btn btn-primary btn-sm save-layout-btn">
+                <i class="fas fa-save"></i> Save
+              </button>
+            </div>
+          </div>
+          <div class="canvas-area" role="application" aria-label="Store builder canvas">
+            <div class="canvas-placeholder">
+              <i class="fas fa-mouse-pointer"></i>
+              <p>Drag components here to build your store</p>
+              <p style="font-size: 0.875rem;">Start by adding a header, then products, and finish with a footer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-catalog">
+        <div class="catalog-header">
+          <h3><i class="fas fa-boxes"></i> Product Catalog</h3>
+          <div class="catalog-filters"></div>
+        </div>
+        <div class="products-grid"></div>
+      </div>
+
+      <div style="margin-top: 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+        <div style="background: var(--bg-card); border-radius: var(--radius-lg); padding: 1.5rem; border: 1px solid var(--border-color);">
+          <h4 style="margin-bottom: 1rem;"><i class="fas fa-lightbulb" style="color: var(--warning-color);"></i> Getting Started</h4>
+          <ol style="color: var(--text-secondary); padding-left: 1.25rem; margin: 0;">
+            <li style="margin-bottom: 0.5rem;">Drag a <strong>Store Header</strong> to the canvas</li>
+            <li style="margin-bottom: 0.5rem;">Add a <strong>Hero Banner</strong> to showcase your brand</li>
+            <li style="margin-bottom: 0.5rem;">Include a <strong>Product Grid</strong> to display items</li>
+            <li style="margin-bottom: 0.5rem;">Add <strong>About</strong> and <strong>Contact</strong> sections</li>
+            <li>Finish with a <strong>Store Footer</strong></li>
+          </ol>
+        </div>
+
+        <div style="background: var(--bg-card); border-radius: var(--radius-lg); padding: 1.5rem; border: 1px solid var(--border-color);">
+          <h4 style="margin-bottom: 1rem;"><i class="fas fa-chart-bar" style="color: var(--accent-color);"></i> Your Store Stats</h4>
+          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+            <div style="text-align: center; padding: 1rem; background: var(--bg-secondary); border-radius: var(--radius-md);">
+              <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary-color);">0</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);">Products Listed</div>
+            </div>
+            <div style="text-align: center; padding: 1rem; background: var(--bg-secondary); border-radius: var(--radius-md);">
+              <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-color);">0</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);">Total Views</div>
+            </div>
+            <div style="text-align: center; padding: 1rem; background: var(--bg-secondary); border-radius: var(--radius-md);">
+              <div style="font-size: 1.5rem; font-weight: 700; color: var(--warning-color);">0</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);">Cart Items</div>
+            </div>
+            <div style="text-align: center; padding: 1rem; background: var(--bg-secondary); border-radius: var(--radius-md);">
+              <div style="font-size: 1.5rem; font-weight: 700; color: var(--secondary-color);">Draft</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);">Store Status</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: var(--bg-card); border-radius: var(--radius-lg); padding: 1.5rem; border: 1px solid var(--border-color);">
+          <h4 style="margin-bottom: 1rem;"><i class="fas fa-question-circle" style="color: var(--primary-color);"></i> Need Help?</h4>
+          <p style="color: var(--text-secondary); margin-bottom: 1rem;">Check out our resources to make the most of Udyam Hub:</p>
+          <ul style="color: var(--text-secondary); margin: 0;">
+            <li style="margin-bottom: 0.5rem;"><a href="#"><i class="fas fa-video"></i> Video Tutorials</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="#"><i class="fas fa-book"></i> User Guide</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="#"><i class="fas fa-headset"></i> Contact Support</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo" style="margin-top: 3rem;">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <p>&copy; 2025 UnifiedX. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/theme-manager.js"></script>
+  <script src="js/auth-simulator.js"></script>
+  <script src="js/store-builder.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

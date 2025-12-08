@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Login to UnifiedX - Access your dashboard and personalized features">
+  <title>Login - UnifiedX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <main id="main-content" class="auth-page">
+    <div class="auth-container">
+      <div class="auth-card">
+        <div class="auth-header">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <i class="fas fa-city"></i>
+            </div>
+            <span>UnifiedX</span>
+          </a>
+          <h1>Welcome Back</h1>
+          <p>Sign in to continue to your dashboard</p>
+        </div>
+
+        <div id="login-alert" style="display: none;"></div>
+
+        <form id="login-form" class="auth-form" novalidate>
+          <div class="form-group">
+            <label for="email" class="form-label">Email Address</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              class="form-input" 
+              placeholder="Enter your email"
+              autocomplete="email"
+              required
+              aria-describedby="email-error"
+            >
+            <span class="form-error" id="email-error" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="password" class="form-label">Password</label>
+            <div class="input-wrapper">
+              <input 
+                type="password" 
+                id="password" 
+                name="password" 
+                class="form-input" 
+                placeholder="Enter your password"
+                autocomplete="current-password"
+                required
+                aria-describedby="password-error"
+              >
+              <button type="button" class="password-toggle" aria-label="Toggle password visibility">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+            <span class="form-error" id="password-error" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="remember-me">
+              <input type="checkbox" name="remember">
+              <span>Remember me for 30 days</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" href="./dashboard.html">
+            <i class="fas fa-sign-in-alt"></i> Sign In
+          </button>
+        </form>
+
+        <div class="auth-divider">
+          <span>or</span>
+        </div>
+
+        <p class="auth-footer">
+          Don't have an account? <a href="signup.html">Sign up for free</a>
+        </p>
+
+        <p style="text-align: center; margin-top: 1rem;">
+          <a href="index.html"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        </p>
+      </div>
+
+      <div style="text-align: center; margin-top: 1.5rem;">
+        <button class="theme-toggle btn-icon" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/theme-manager.js"></script>
+  <script src="js/auth-simulator.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof AuthSimulator !== 'undefined' && AuthSimulator.isAuthenticated()) {
+        window.location.href = 'dashboard.html';
+      }
+    });
+  </script>
+</body>
+</html>

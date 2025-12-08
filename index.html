@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UnifiedX - Empowering Mira Bhayandar with smart transit, cybersecurity education, and local business tools">
+  <meta name="theme-color" content="#2563eb">
+  <title>UnifiedX - Smart City Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="header" role="banner">
+    <div class="header-content">
+      <a href="index.html" class="logo" aria-label="UnifiedX Home">
+        <div class="logo-icon">
+          <i class="fas fa-city"></i>
+        </div>
+        <span>UnifiedX</span>
+      </a>
+
+      <nav class="nav-menu" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#modules" class="nav-link">Modules</a>
+        <a href="#about" class="nav-link">About</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle btn-icon" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+        </button>
+        
+        <div class="guest-only">
+          <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
+          <a href="signup.html" class="btn btn-primary btn-sm">Get Started</a>
+        </div>
+
+        <div class="auth-only user-menu" style="display: none;">
+          <div class="user-avatar" tabindex="0" role="button" aria-haspopup="true" aria-label="User menu">
+            U
+          </div>
+          <div class="user-dropdown" role="menu">
+            <div class="user-dropdown-header">
+              <h4 class="user-name">User</h4>
+              <p class="user-email">user@example.com</p>
+            </div>
+            <div class="user-dropdown-menu">
+              <a href="dashboard.html" role="menuitem"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+              <button class="logout-btn logout" role="menuitem"><i class="fas fa-sign-out-alt"></i> Logout</button>
+            </div>
+          </div>
+        </div>
+
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-menu" role="navigation" aria-label="Mobile navigation">
+    <a href="index.html" class="nav-link active">Home</a>
+    <a href="#features" class="nav-link">Features</a>
+    <a href="#modules" class="nav-link">Modules</a>
+    <a href="#about" class="nav-link">About</a>
+    <div class="guest-only" style="margin-top: 1rem;">
+      <a href="login.html" class="btn btn-secondary" style="width: 100%; margin-bottom: 0.5rem;">Login</a>
+      <a href="signup.html" class="btn btn-primary" style="width: 100%;">Get Started</a>
+    </div>
+    <div class="auth-only" style="margin-top: 1rem; display: none;">
+      <a href="dashboard.html" class="btn btn-primary" style="width: 100%;">Dashboard</a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <span class="hero-badge">Smart City Initiative</span>
+            <h1 class="hero-title">
+              Empowering <span>Mira Bhayandar</span> for a Digital Future
+            </h1>
+            <p class="hero-description">
+              Your all-in-one platform for smart transit navigation, cybersecurity awareness, and local business empowerment.
+            </p>
+            <div class="hero-buttons">
+              <a href="signup.html" class="btn btn-primary btn-lg guest-only">
+                <i class="fas fa-rocket"></i> Get Started Free
+              </a>
+              <a href="dashboard.html" class="btn btn-primary btn-lg auth-only" style="display: none;">
+                <i class="fas fa-tachometer-alt"></i> Go to Dashboard
+              </a>
+              <a href="#modules" class="btn btn-secondary btn-lg">
+                <i class="fas fa-compass"></i> Explore Modules
+              </a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-illustration" aria-hidden="true">
+              <i class="fas fa-city"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Why Choose UnifiedX?</h2>
+          <p>A comprehensive platform designed specifically for the Mira Bhayandar community</p>
+        </div>
+        <div class="features-grid">
+          <div class="card feature-card">
+            <div class="card-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3 class="card-title">Secure & Private</h3>
+            <p class="card-text">Your data stays on your device. No servers, no tracking—just pure client-side functionality.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="card-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3 class="card-title">Mobile First</h3>
+            <p class="card-text">Designed to work seamlessly on any device, from smartphones to desktops.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="card-icon">
+              <i class="fas fa-wifi"></i>
+            </div>
+            <h3 class="card-title">Works Offline</h3>
+            <p class="card-text">Access key features even without internet. Your progress is saved locally.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="card-icon">
+              <i class="fas fa-universal-access"></i>
+            </div>
+            <h3 class="card-title">Accessible</h3>
+            <p class="card-text">Built with accessibility in mind, ensuring everyone can use our platform.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="card-icon">
+              <i class="fas fa-language"></i>
+            </div>
+            <h3 class="card-title">Local Focus</h3>
+            <p class="card-text">Tailored for the Mira Bhayandar region with relevant local information.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="card-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3 class="card-title">Learn & Grow</h3>
+            <p class="card-text">Interactive lessons and tools to build digital skills and business knowledge.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="modules" class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Three Pillars</h2>
+          <p>Comprehensive modules designed to transform your digital experience</p>
+        </div>
+        <div class="modules-grid">
+          <div class="card module-card transit">
+            <div class="module-icon">
+              <i class="fas fa-subway"></i>
+            </div>
+            <h3 class="card-title">Transit Companion</h3>
+            <p class="card-text">Navigate the Mira Bhayandar metro system with ease. Real-time schedules, interactive maps, and station information.</p>
+            <ul class="module-features">
+              <li><i class="fas fa-check"></i> Interactive Metro Map</li>
+              <li><i class="fas fa-check"></i> Station Information</li>
+              <li><i class="fas fa-check"></i> Schedule Timings</li>
+              <li><i class="fas fa-check"></i> Facility Details</li>
+            </ul>
+            <a href="transit.html" class="btn btn-primary">
+              <i class="fas fa-map-marked-alt"></i> Explore Transit
+            </a>
+          </div>
+
+          <div class="card module-card shield">
+            <div class="module-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3 class="card-title">Digital Shield</h3>
+            <p class="card-text">Learn to protect yourself online with interactive cybersecurity lessons and our AI chatbot assistant.</p>
+            <ul class="module-features">
+              <li><i class="fas fa-check"></i> Phishing Detection</li>
+              <li><i class="fas fa-check"></i> Password Security</li>
+              <li><i class="fas fa-check"></i> AI Chatbot Guide</li>
+              <li><i class="fas fa-check"></i> Progress Tracking</li>
+            </ul>
+            <a href="digitalshield.html" class="btn btn-primary">
+              <i class="fas fa-user-shield"></i> Start Learning
+            </a>
+          </div>
+
+          <div class="card module-card udyam">
+            <div class="module-icon">
+              <i class="fas fa-store"></i>
+            </div>
+            <h3 class="card-title">Udyam Hub</h3>
+            <p class="card-text">Empower your local business with our no-code store builder and product management tools.</p>
+            <ul class="module-features">
+              <li><i class="fas fa-check"></i> Drag & Drop Builder</li>
+              <li><i class="fas fa-check"></i> Product Catalog</li>
+              <li><i class="fas fa-check"></i> Store Templates</li>
+              <li><i class="fas fa-check"></i> Cart Management</li>
+            </ul>
+            <a href="udyamhub.html" class="btn btn-primary">
+              <i class="fas fa-rocket"></i> Build Your Store
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">7+</div>
+            <div class="stat-label">Metro Stations</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Security Lessons</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Local Products</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Free to Use</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>About UnifiedX</h2>
+          <p>A community-driven initiative to bridge the digital divide</p>
+        </div>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+          <p style="font-size: 1.125rem; margin-bottom: 1.5rem;">
+            UnifiedX is a comprehensive smart city platform designed specifically for the residents of Mira Bhayandar. Our mission is to empower the community with essential digital tools and knowledge.
+          </p>
+          <p style="font-size: 1.125rem; margin-bottom: 2rem;">
+            From navigating the metro system to protecting yourself from cyber threats and growing your local business—UnifiedX is your trusted companion in the digital age.
+          </p>
+          <a href="signup.html" class="btn btn-primary btn-lg">
+            <i class="fas fa-user-plus"></i> Join Our Community
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2 class="cta-title">Ready to Get Started?</h2>
+          <p class="cta-text">Join thousands of Mira Bhayandar residents who are already using UnifiedX to navigate, learn, and grow.</p>
+          <a href="signup.html" class="btn btn-lg" style="background: white; color: var(--primary-color);">
+            Create Free Account
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <i class="fas fa-city"></i>
+            </div>
+            <span>UnifiedX</span>
+          </a>
+          <p>Empowering Mira Bhayandar for a smarter, safer, and more connected future.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Modules</h4>
+          <ul>
+            <li><a href="transit.html">Transit Companion</a></li>
+            <li><a href="digitalshield.html">Digital Shield</a></li>
+            <li><a href="udyamhub.html">Udyam Hub</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Account</h4>
+          <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 UnifiedX. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/theme-manager.js"></script>
+  <script src="js/auth-simulator.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
