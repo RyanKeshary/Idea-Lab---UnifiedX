@@ -14,6 +14,36 @@
 
 [🚀 **View Live Demo**](https://ryankeshary.github.io/Idea-Lab---UnifiedX/)  
 
+## 🎥 Demo Video
+
+<div align="center">
+  
+[![Watch UnifiedX Demo](https://img.youtube.com/vi/a69oE85IHkw/0.jpg)](https://youtu.be/a69oE85IHkw)
+
+**Click the image above to watch the full demo (2 minutes)**
+</div>
+
+### **What's in the demo:**
+1. **00:00-00:30** - Landing page & theme toggle
+2. **00:30-01:00** - User authentication flow
+3. **01:00-01:30** - Dashboard & module navigation  
+4. **01:30-02:00** - All three modules in action
+5. **02:00-02:15** - Mobile responsiveness
+
+---
+
+## 📸 Screenshots from the Video
+
+| Time | Screenshot | Description |
+|------|------------|-------------|
+| 0:15 | ![Homepage](screenshots/home-light.png) | Landing page (light theme) |
+| 0:25 | ![Dark Theme](screenshots/home-dark.png) | Dark theme activated |
+| 0:45 | ![Login](screenshots/login.png) | User authentication |
+| 1:10 | ![Dashboard](screenshots/dashboard.png) | Personalized dashboard |
+| 1:30 | ![Transit](screenshots/transit.png) | Metro transit module |
+| 1:45 | ![Shield](screenshots/shield.png) | Cybersecurity lessons |
+| 2:00 | ![Udyam](screenshots/udyam.png) | Store builder interface |
+
 ## 📖 Table of Contents
 
 - [Overview](#-overview)
