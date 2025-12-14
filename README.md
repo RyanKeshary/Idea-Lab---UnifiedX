@@ -13,7 +13,6 @@
 ## 🌐 Live Demo
 
 [🚀 **View Live Demo**](https://ryankeshary.github.io/Idea-Lab---UnifiedX/)  
-*(Replace with your GitHub Pages URL after deployment)*
 
 ## 📖 Table of Contents
 
