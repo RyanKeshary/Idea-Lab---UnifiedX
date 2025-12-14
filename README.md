@@ -16,7 +16,7 @@
 
 ## 🎥 Demo Video
 
-<div align="center">
+<div >
   
 [![Watch UnifiedX Demo](https://img.youtube.com/vi/a69oE85IHkw/0.jpg)](https://youtu.be/a69oE85IHkw)
 
