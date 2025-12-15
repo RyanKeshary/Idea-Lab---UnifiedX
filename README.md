@@ -32,17 +32,31 @@
 
 ---
 
-## 📸 Screenshots from the Video
+## 📸 Screenshots
 
-| Time | Screenshot | Description |
-|------|------------|-------------|
-| 0:15 | ![Homepage](screenshots/home-light.png) | Landing page (light theme) |
-| 0:25 | ![Dark Theme](screenshots/home-dark.png) | Dark theme activated |
-| 0:45 | ![Login](screenshots/login.png) | User authentication |
-| 1:10 | ![Dashboard](screenshots/dashboard.png) | Personalized dashboard |
-| 1:30 | ![Transit](screenshots/transit.png) | Metro transit module |
-| 1:45 | ![Shield](screenshots/shield.png) | Cybersecurity lessons |
-| 2:00 | ![Udyam](screenshots/udyam.png) | Store builder interface |
+<div align="center">
+
+### **Homepage & Authentication**
+| Light Theme Homepage | Dark Theme Homepage | Login Page |
+|----------------------|---------------------|------------|
+| <img width="400" alt="Light Theme" src="https://github.com/user-attachments/assets/127731fa-24f1-4c20-9171-7b0f87b01edd" /> | <img width="400" alt="Dark Theme" src="https://github.com/user-attachments/assets/ed693e39-2e53-4e94-a57e-360292302a91" /> | <img width="400" alt="Login" src="https://github.com/user-attachments/assets/80dffa1a-2406-4b5c-96b2-d6a4b770e952" /> |
+
+### **Dashboard & Modules**
+| User Dashboard | Metro Transit Module | Digital Shield Module |
+|----------------|----------------------|-----------------------|
+| <img width="400" alt="Dashboard" src="https://github.com/user-attachments/assets/64e8104d-9d47-4f1f-aad7-3b5efa01fc19" /> | <img width="400" alt="Transit" src="https://github.com/user-attachments/assets/07c84227-bdbc-4888-8bf0-ac4919e9fe81" /> | <img width="400" alt="Shield" src="https://github.com/user-attachments/assets/64573c68-e0e5-468b-a55b-57f17eaac678" /> |
+
+### **Business Hub & Mobile Views**
+| Udyam Hub Store Builder | Mobile Light Theme | Mobile Dark Theme |
+|-------------------------|--------------------|-------------------|
+| <img width="400" alt="Udyam Hub" src="https://github.com/user-attachments/assets/b9781567-11dd-4a9c-a68f-092b04c8c994" /> | <img width="200" alt="Mobile Light" src="https://github.com/user-attachments/assets/2973219e-66ca-459f-a856-6a59f0843944" /> | <img width="200" alt="Mobile Dark" src="https://github.com/user-attachments/assets/8d840f45-b552-4e61-8f96-5d66f8a9e5e1" /> |
+
+### **Interactive Features**
+| Chatbot Assistant | Sign Up Page | Features Section |
+|-------------------|--------------|------------------|
+| <img width="400" alt="Chatbot" src="https://github.com/user-attachments/assets/81ff60b9-3c45-415f-bf8e-c79ccb723169" /> | <img width="400" alt="Sign Up" src="https://github.com/user-attachments/assets/0300b50a-5b95-49e5-b05e-c51e1568b070" /> | <img width="400" alt="Features" src="https://github.com/user-attachments/assets/0300b50a-5b95-49e5-b05e-c51e1568b070" /> |
+
+</div>
 
 ## 📖 Table of Contents
 
