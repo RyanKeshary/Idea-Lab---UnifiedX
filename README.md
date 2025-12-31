@@ -18,17 +18,17 @@
 
 <div >
   
-[![Watch UnifiedX Demo](https://img.youtube.com/vi/a69oE85IHkw/0.jpg)](https://youtu.be/a69oE85IHkw)
+
+[![Watch UnifiedX Demo](https://img.youtube.com/vi/3gaPY9mBnNQ/0.jpg)](https://youtu.be/3gaPY9mBnNQ)
 
 **Click the image above to watch the full demo (2 minutes)**
 </div>
 
 ### **What's in the demo:**
-1. **00:00-00:30** - Landing page & theme toggle
-2. **00:30-01:00** - User authentication flow
-3. **01:00-01:30** - Dashboard & module navigation  
-4. **01:30-02:00** - All three modules in action
-5. **02:00-02:15** - Mobile responsiveness
+1. **00:00-00:18** - Landing page & theme toggle
+2. **00:18-00:26** - User authentication flow
+3. **00:26-00:48** - Dashboard & module navigation  
+4. **00:48-02:12** - All three modules in action
 
 ---
 
@@ -39,22 +39,22 @@
 ### **Homepage & Authentication**
 | Light Theme Homepage | Dark Theme Homepage | Login Page |
 |----------------------|---------------------|------------|
-| <img width="400" alt="Light Theme" src="https://github.com/user-attachments/assets/127731fa-24f1-4c20-9171-7b0f87b01edd" /> | <img width="400" alt="Dark Theme" src="https://github.com/user-attachments/assets/ed693e39-2e53-4e94-a57e-360292302a91" /> | <img width="400" alt="Login" src="https://github.com/user-attachments/assets/80dffa1a-2406-4b5c-96b2-d6a4b770e952" /> |
+| <img width="2560" height="1440" alt="Image" src="https://github.com/user-attachments/assets/ea1e5460-4292-4a77-95a4-3b8f89c5f5e6" /> | <img width="2556" height="1440" alt="Image" src="https://github.com/user-attachments/assets/0410e337-f30b-44ca-8838-c698ebd5786e" /> | <img width="2560" height="1440" alt="Image" src="https://github.com/user-attachments/assets/b7b3ca1d-dbdc-4f65-9832-cbd9d2f530dc" /> |
 
 ### **Dashboard & Modules**
 | User Dashboard | Metro Transit Module | Digital Shield Module |
 |----------------|----------------------|-----------------------|
-| <img width="400" alt="Dashboard" src="https://github.com/user-attachments/assets/64e8104d-9d47-4f1f-aad7-3b5efa01fc19" /> | <img width="400" alt="Transit" src="https://github.com/user-attachments/assets/07c84227-bdbc-4888-8bf0-ac4919e9fe81" /> | <img width="400" alt="Shield" src="https://github.com/user-attachments/assets/64573c68-e0e5-468b-a55b-57f17eaac678" /> |
+| <img width="2559" height="1439" alt="Image" src="https://github.com/user-attachments/assets/1f59e76f-6e6b-4d35-8676-f9a6bc218f71" /> | <img width="2559" height="1439" alt="Image" src="https://github.com/user-attachments/assets/714fbe31-b050-48c3-9596-163051ec1720" /> | <img width="2559" height="1439" alt="Image" src="https://github.com/user-attachments/assets/c5ceeeb5-c2e2-472b-a187-c27019dba3a1" /> |
 
 ### **Business Hub & Mobile Views**
 | Udyam Hub Store Builder | Mobile Light Theme | Mobile Dark Theme |
 |-------------------------|--------------------|-------------------|
-| <img width="400" alt="Udyam Hub" src="https://github.com/user-attachments/assets/b9781567-11dd-4a9c-a68f-092b04c8c994" /> | <img width="200" alt="Mobile Light" src="https://github.com/user-attachments/assets/2973219e-66ca-459f-a856-6a59f0843944" /> | <img width="200" alt="Mobile Dark" src="https://github.com/user-attachments/assets/8d840f45-b552-4e61-8f96-5d66f8a9e5e1" /> |
+| <img width="2554" height="1427" alt="Image" src="https://github.com/user-attachments/assets/353d2d18-bc3a-4f9c-89e3-93370207511b" /> | <img width="533" height="1163" alt="Image" src="https://github.com/user-attachments/assets/aba78591-3351-496d-bb8e-5c06b833a8b1" /> | <img width="536" height="1150" alt="Image" src="https://github.com/user-attachments/assets/51eeb380-35c1-4b1c-aff1-c4be42f8a2d6" /> |
 
 ### **Interactive Features**
 | Chatbot Assistant | Sign Up Page | Features Section |
 |-------------------|--------------|------------------|
-| <img width="400" alt="Chatbot" src="https://github.com/user-attachments/assets/81ff60b9-3c45-415f-bf8e-c79ccb723169" /> | <img width="400" alt="Sign Up" src="https://github.com/user-attachments/assets/0300b50a-5b95-49e5-b05e-c51e1568b070" /> | <img width="400" alt="Features" src="https://github.com/user-attachments/assets/0300b50a-5b95-49e5-b05e-c51e1568b070" /> |
+| <img width="2559" height="1439" alt="Image" src="https://github.com/user-attachments/assets/7ac6786f-cc58-4641-b79e-6e30c40b6335" /> | <img width="2559" height="1439" alt="Image" src="https://github.com/user-attachments/assets/2a649543-73b8-471f-ba8f-d684784c45d1" /> | <img width="2559" height="1439" alt="Image" src="https://github.com/user-attachments/assets/9de7d1e3-5705-4bc2-9e9d-191f9201c8a5" /> |
 
 </div>
 
@@ -84,19 +84,22 @@ This project is a **fully functional frontend prototype** built with pure HTML, 
 ## ✨ Features
 
 ### 🎨 **Modern UI/UX**
-- Complete light/dark theme system
-- Fully responsive design (mobile-first)
+- Complete light/dark theme system with refined color palette
+- Fully responsive design (mobile-first) with tap-to-add functionality
 - Smooth animations & transitions
 - WCAG 2.1 AA accessibility compliance
 - Semantic HTML structure
 - Custom component library
+- **NEW:** Context-aware navigation with intelligent link highlighting
 
 ### 🔐 **Authentication System**
-- Sign up & login with form validation
+- Complete sign up & login with form validation
 - Password strength indicators
 - Remember me functionality
 - localStorage-based user management
 - Auto-redirect based on auth state
+- **NEW:** Fully functional logout system with session management
+- **NEW:** Dynamic dashboard link that appears only when logged in
 
 ### 📱 **Three Core Modules**
 
@@ -104,7 +107,7 @@ This project is a **fully functional frontend prototype** built with pure HTML, 
 |--------|------|-------------|
 | **Transit Companion** | 🚇 | Interactive metro map with station details, schedules, and facility information |
 | **Digital Shield** | 🛡️ | Cybersecurity lessons, AI chatbot assistant, and progress tracking |
-| **Udyam Hub** | 🛒 | Drag-and-drop store builder and local product catalog |
+| **Udyam Hub** | 🛒 | Drag-and-drop store builder with tap-to-add mobile functionality |
 
 ### 💾 **Smart Data Management**
 - Static JSON data files for content
@@ -117,7 +120,7 @@ This project is a **fully functional frontend prototype** built with pure HTML, 
 - Screen reader compatible
 - Keyboard navigation support
 - ARIA labels and roles
-- Color contrast compliance
+- Color contrast compliance (fixed dark mode text visibility)
 - Skip-to-content links
 - Focus management
 
@@ -168,33 +171,33 @@ xdg-open index.html
 ```
 unifiedx/
 ├── index.html              # Landing page
-├── login.html             # Login page
-├── signup.html            # Sign up page
-├── dashboard.html         # User dashboard
-├── transit.html           # Metro transit module
-├── digitalshield.html     # Cybersecurity module
-├── udyamhub.html          # Business hub module
-├── 404.html              # Error page
+├── login.html              # Login page
+├── signup.html             # Sign up page
+├── dashboard.html          # User dashboard
+├── transit.html            # Metro transit module
+├── digitalshield.html      # Cybersecurity module
+├── udyamhub.html           # Business hub module
+├── 404.html                # Error page
 │
 ├── css/
-│   ├── main.css          # Global styles & utilities
-│   ├── themes.css        # Light/dark theme definitions
-│   └── responsive.css    # Media queries & responsive design
+│   ├── main.css           # Global styles & utilities
+│   ├── themes.css         # Light/dark theme definitions
+│   └── responsive.css     # Media queries & responsive design
 │
 ├── js/
-│   ├── main.js           # Core application logic
-│   ├── theme-manager.js  # Theme switching & persistence
-│   ├── auth-simulator.js # Authentication system
-│   ├── chatbot.js        # AI chat assistant
-│   ├── map-simulator.js  # Metro map interactions
-│   └── store-builder.js  # Drag-and-drop store builder
+│   ├── main.js            # Core application logic
+│   ├── theme-manager.js   # Theme switching & persistence
+│   ├── auth-simulator.js  # Authentication system
+│   ├── chatbot.js         # AI chat assistant
+│   ├── map-simulator.js   # Metro map interactions
+│   └── store-builder.js   # Drag-and-drop store builder
 │
 ├── data/
-│   ├── stations.json     # Metro station data
+│   ├── stations.json      # Metro station data
 │   ├── chatbot-script.json # Conversation flows
-│   └── products.json     # Product catalog & categories
+│   └── products.json      # Product catalog & categories
 │
-└── assets/               # Images & icons (if needed)
+└── assets/                # Images & icons (if needed)
 ```
 
 ## 🎮 User Journey
@@ -232,12 +235,12 @@ unifiedx/
 
 | Module | Purpose | Key Functions |
 |--------|---------|---------------|
-| `main.js` | Core app logic | Navigation, modals, animations |
-| `auth-simulator.js` | User management | Sign up, login, session handling |
+| `main.js` | Core app logic | Navigation, user menu, scroll handling, animations |
+| `auth-simulator.js` | User management | Sign up, login, logout, session handling |
 | `theme-manager.js` | UI themes | Toggle themes, save preferences |
-| `chatbot.js` | AI assistant | Conversation flows, quick replies |
-| `map-simulator.js` | Metro map | Station data, SVG rendering |
-| `store-builder.js` | Store builder | Drag & drop, layout saving |
+| `chatbot.js` | AI assistant | Conversation flows, quick replies, mobile responsive |
+| `map-simulator.js` | Metro map | Station data, SVG rendering, interactions |
+| `store-builder.js` | Store builder | Drag & drop, layout saving, tap-to-add mobile |
 
 ## 🌐 Deployment
 
@@ -272,6 +275,7 @@ Accent: #10B981 (Teal)
 Warning: #F59E0B (Amber)
 Error: #EF4444 (Red)
 Success: #22C55E (Green)
+Text Primary: var(--text-primary) /* Theme-aware */
 ```
 
 ### **Typography**
@@ -281,19 +285,23 @@ Success: #22C55E (Green)
 
 ### **Components**
 - Cards with hover effects
-- Animated buttons
+- Animated buttons with proper contrast
 - Progress indicators
 - Form inputs with validation
 - Alert messages
-- Modal dialogs
-- Navigation bars
+- Modal dialogs with close functionality
+- Context-aware navigation bars
 
 ## 🔮 Future Roadmap
 
 ### **Phase 1 (Current)** ✓
-- Static frontend prototype
-- Local data storage
-- Basic interactivity
+- Real API integration
+- ✅ Static frontend prototype
+- ✅ Local data storage
+- ✅ Complete authentication system
+- ✅ Mobile-responsive design
+- ✅ All three functional modules
+- ✅ Premium UI/UX with light/dark themes
 
 ### **Phase 2 (Planned)**
 - Real API integrations
@@ -303,10 +311,11 @@ Success: #22C55E (Green)
 - Language localization
 
 ### **Phase 3 (Future)**
-- Backend integration
-- Real-time features
+- Backend integration with Node.js
+- Real-time features (live transit updates)
 - Advanced analytics
-- Mobile apps
+- Mobile apps (React Native)
+- Community features
 
 ## 🤝 Contributing
 
