@@ -1,223 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="UnifiedX Dashboard - Your personal command center">
-  <title>Dashboard - UnifiedX</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="css/themes.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/responsive.css">
-</head>
-<body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="UnifiedX Dashboard - Your personal command center"
+    />
+    <title>Dashboard - UnifiedX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/themes.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <header class="header scrolled" role="banner">
-    <div class="header-content">
-      <a href="index.html" class="logo" aria-label="UnifiedX Home">
-        <div class="logo-icon">
-          <i class="fas fa-city"></i>
-        </div>
-        <span>UnifiedX</span>
-      </a>
-
-      <nav class="nav-menu" role="navigation" aria-label="Main navigation">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="dashboard.html" class="nav-link active">Dashboard</a>
-        <a href="transit.html" class="nav-link">Transit</a>
-        <a href="digitalshield.html" class="nav-link">Shield</a>
-        <a href="udyamhub.html" class="nav-link">Udyam</a>
-      </nav>
-
-      <div class="nav-actions">
-        <button class="theme-toggle btn-icon" aria-label="Toggle dark mode">
-          <i class="fas fa-moon"></i>
-          <i class="fas fa-sun"></i>
-        </button>
-        
-        <div class="user-menu">
-          <div class="user-avatar" tabindex="0" role="button" aria-haspopup="true" aria-label="User menu">
-            U
+    <header class="header scrolled" role="banner">
+      <div class="header-content">
+        <a href="index.html" class="logo" aria-label="UnifiedX Home">
+          <div class="logo-icon">
+            <i class="fas fa-city"></i>
           </div>
-          <div class="user-dropdown" role="menu">
-            <div class="user-dropdown-header">
-              <h4 class="user-name">User</h4>
-              <p class="user-email">user@example.com</p>
+          <span>UnifiedX</span>
+        </a>
+
+        <nav class="nav-menu" role="navigation" aria-label="Main navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="dashboard.html" class="nav-link active">Dashboard</a>
+          <a href="transit.html" class="nav-link">Transit</a>
+          <a href="digitalshield.html" class="nav-link">Shield</a>
+          <a href="udyamhub.html" class="nav-link">Udyam</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="theme-toggle btn-icon" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          </button>
+
+          <div class="user-menu">
+            <div
+              class="user-avatar"
+              tabindex="0"
+              role="button"
+              aria-haspopup="true"
+              aria-label="User menu"
+            >
+              U
             </div>
-            <div class="user-dropdown-menu">
-              <a href="dashboard.html" role="menuitem"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
-              <button class="logout-btn logout" role="menuitem"><i class="fas fa-sign-out-alt"></i> Logout</button>
+            <div class="user-dropdown" role="menu">
+              <div class="user-dropdown-header">
+                <h4 class="user-name">User</h4>
+                <p class="user-email">user@example.com</p>
+              </div>
+              <div class="user-dropdown-menu">
+                <a href="dashboard.html" role="menuitem"
+                  ><i class="fas fa-tachometer-alt"></i> Dashboard</a
+                >
+                <button class="logout-btn logout" role="menuitem">
+                  <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <nav class="mobile-menu" role="navigation" aria-label="Mobile navigation">
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="dashboard.html" class="nav-link active">Dashboard</a>
-    <a href="transit.html" class="nav-link">Transit</a>
-    <a href="digitalshield.html" class="nav-link">Shield</a>
-    <a href="udyamhub.html" class="nav-link">Udyam</a>
-    <button class="logout-btn btn btn-secondary" style="width: 100%; margin-top: 1rem;">
-      <i class="fas fa-sign-out-alt"></i> Logout
-    </button>
-  </nav>
-
-  <main id="main-content" class="dashboard-page">
-    <div class="container">
-      <div class="dashboard-header">
-        <div class="welcome-message">
-          <h1>Welcome back, <span class="user-name">User</span>!</h1>
-          <p>Here's your UnifiedX overview. Keep learning and growing!</p>
+          <button
+            class="hamburger"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
+    </header>
 
-      <div class="dashboard-stats">
-        <div class="stat-card">
-          <div class="stat-card-icon transit">
-            <i class="fas fa-subway"></i>
-          </div>
-          <h3>7</h3>
-          <p>Stations Explored</p>
-        </div>
-        <div class="stat-card">
-          <div class="stat-card-icon shield">
-            <i class="fas fa-shield-alt"></i>
-          </div>
-          <h3>3</h3>
-          <p>Lessons Completed</p>
-        </div>
-        <div class="stat-card">
-          <div class="stat-card-icon udyam">
-            <i class="fas fa-store"></i>
-          </div>
-          <h3>5</h3>
-          <p>Store Components</p>
-        </div>
-        <div class="stat-card">
-          <div class="stat-card-icon general">
-            <i class="fas fa-trophy"></i>
-          </div>
-          <h3 class="total-progress">25%</h3>
-          <p>Overall Progress</p>
-        </div>
-      </div>
+    <nav class="mobile-menu" role="navigation" aria-label="Mobile navigation">
+      <button class="menu-close-btn" aria-label="Close menu">
+        <i class="fas fa-times"></i>
+      </button>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="dashboard.html" class="nav-link active">Dashboard</a>
+      <a href="transit.html" class="nav-link">Transit</a>
+      <a href="digitalshield.html" class="nav-link">Shield</a>
+      <a href="udyamhub.html" class="nav-link">Udyam</a>
+      <button
+        class="logout-btn btn btn-secondary"
+        style="width: 100%; margin-top: 1rem"
+      >
+        <i class="fas fa-sign-out-alt"></i> Logout
+      </button>
+    </nav>
 
-      <h2 style="margin-bottom: 1.5rem;">Your Modules</h2>
+    <main id="main-content" class="dashboard-page">
+      <div class="container">
+        <div class="dashboard-header">
+          <div class="welcome-message">
+            <h1>Welcome back, <span class="user-name">User</span>!</h1>
+            <p>Here's your UnifiedX overview. Keep learning and growing!</p>
+          </div>
+        </div>
 
-      <div class="dashboard-modules">
-        <a href="transit.html" class="dashboard-module-card" style="text-decoration: none; color: inherit;">
-          <div class="module-card-header transit">
-            <div class="module-icon" style="margin: 0;">
+        <div class="dashboard-stats">
+          <div class="stat-card">
+            <div class="stat-card-icon transit">
               <i class="fas fa-subway"></i>
             </div>
-            <div>
-              <h3 style="margin: 0;">Transit Companion</h3>
-              <p style="margin: 0; font-size: 0.875rem; opacity: 0.8;">Navigate the metro</p>
-            </div>
+            <h3>7</h3>
+            <p>Stations Explored</p>
           </div>
-          <div class="module-card-body">
-            <p>Explore metro stations, view schedules, and plan your journey through Mira Bhayandar.</p>
-            <div class="progress-bar">
-              <div class="progress-fill" data-module="transit" style="width: 30%;"></div>
-            </div>
-            <span class="progress-label" data-module="transit">30% Complete</span>
-          </div>
-        </a>
-
-        <a href="digitalshield.html" class="dashboard-module-card" style="text-decoration: none; color: inherit;">
-          <div class="module-card-header shield">
-            <div class="module-icon" style="margin: 0;">
+          <div class="stat-card">
+            <div class="stat-card-icon shield">
               <i class="fas fa-shield-alt"></i>
             </div>
-            <div>
-              <h3 style="margin: 0;">Digital Shield</h3>
-              <p style="margin: 0; font-size: 0.875rem; opacity: 0.8;">Cybersecurity training</p>
-            </div>
+            <h3>3</h3>
+            <p>Lessons Completed</p>
           </div>
-          <div class="module-card-body">
-            <p>Learn to protect yourself online with interactive lessons and AI-powered guidance.</p>
-            <div class="progress-bar">
-              <div class="progress-fill" data-module="shield" style="width: 25%;"></div>
-            </div>
-            <span class="progress-label" data-module="shield">25% Complete</span>
-          </div>
-        </a>
-
-        <a href="udyamhub.html" class="dashboard-module-card" style="text-decoration: none; color: inherit;">
-          <div class="module-card-header udyam">
-            <div class="module-icon" style="margin: 0;">
+          <div class="stat-card">
+            <div class="stat-card-icon udyam">
               <i class="fas fa-store"></i>
             </div>
-            <div>
-              <h3 style="margin: 0;">Udyam Hub</h3>
-              <p style="margin: 0; font-size: 0.875rem; opacity: 0.8;">Business tools</p>
-            </div>
+            <h3>5</h3>
+            <p>Store Components</p>
           </div>
-          <div class="module-card-body">
-            <p>Build your online store with our drag-and-drop builder and manage your products.</p>
-            <div class="progress-bar">
-              <div class="progress-fill" data-module="udyam" style="width: 20%;"></div>
+          <div class="stat-card">
+            <div class="stat-card-icon general">
+              <i class="fas fa-trophy"></i>
             </div>
-            <span class="progress-label" data-module="udyam">20% Complete</span>
+            <h3 class="total-progress">25%</h3>
+            <p>Overall Progress</p>
           </div>
-        </a>
-      </div>
+        </div>
 
-      <div style="margin-top: 3rem; background: var(--bg-card); border-radius: var(--radius-lg); padding: 2rem; border: 1px solid var(--border-color);">
-        <h3 style="margin-bottom: 1rem;">Quick Tips</h3>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
-          <div class="alert alert-info">
-            <i class="fas fa-lightbulb"></i>
-            <span>Complete all Digital Shield lessons to earn the Cyber Guardian badge!</span>
-          </div>
-          <div class="alert alert-success">
-            <i class="fas fa-check-circle"></i>
-            <span>Your progress is saved automatically. Come back anytime!</span>
-          </div>
-          <div class="alert alert-warning">
-            <i class="fas fa-star"></i>
-            <span>Try the chatbot in Digital Shield for personalized security tips.</span>
+        <h2 style="margin-bottom: 1.5rem">Your Modules</h2>
+
+        <div class="dashboard-modules">
+          <a
+            href="transit.html"
+            class="dashboard-module-card"
+            style="text-decoration: none; color: inherit"
+          >
+            <div class="module-card-header transit">
+              <div class="module-icon" style="margin: 0">
+                <i class="fas fa-subway"></i>
+              </div>
+              <div>
+                <h3 style="margin: 0">Transit Companion</h3>
+                <p style="margin: 0; font-size: 0.875rem; opacity: 0.8">
+                  Navigate the metro
+                </p>
+              </div>
+            </div>
+            <div class="module-card-body">
+              <p>
+                Explore metro stations, view schedules, and plan your journey
+                through Mira Bhayandar.
+              </p>
+              <div class="progress-bar">
+                <div
+                  class="progress-fill"
+                  data-module="transit"
+                  style="width: 30%"
+                ></div>
+              </div>
+              <span class="progress-label" data-module="transit"
+                >30% Complete</span
+              >
+            </div>
+          </a>
+
+          <a
+            href="digitalshield.html"
+            class="dashboard-module-card"
+            style="text-decoration: none; color: inherit"
+          >
+            <div class="module-card-header shield">
+              <div class="module-icon" style="margin: 0">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div>
+                <h3 style="margin: 0">Digital Shield</h3>
+                <p style="margin: 0; font-size: 0.875rem; opacity: 0.8">
+                  Cybersecurity training
+                </p>
+              </div>
+            </div>
+            <div class="module-card-body">
+              <p>
+                Learn to protect yourself online with interactive lessons and
+                AI-powered guidance.
+              </p>
+              <div class="progress-bar">
+                <div
+                  class="progress-fill"
+                  data-module="shield"
+                  style="width: 25%"
+                ></div>
+              </div>
+              <span class="progress-label" data-module="shield"
+                >25% Complete</span
+              >
+            </div>
+          </a>
+
+          <a
+            href="udyamhub.html"
+            class="dashboard-module-card"
+            style="text-decoration: none; color: inherit"
+          >
+            <div class="module-card-header udyam">
+              <div class="module-icon" style="margin: 0">
+                <i class="fas fa-store"></i>
+              </div>
+              <div>
+                <h3 style="margin: 0">Udyam Hub</h3>
+                <p style="margin: 0; font-size: 0.875rem; opacity: 0.8">
+                  Business tools
+                </p>
+              </div>
+            </div>
+            <div class="module-card-body">
+              <p>
+                Build your online store with our drag-and-drop builder and
+                manage your products.
+              </p>
+              <div class="progress-bar">
+                <div
+                  class="progress-fill"
+                  data-module="udyam"
+                  style="width: 20%"
+                ></div>
+              </div>
+              <span class="progress-label" data-module="udyam"
+                >20% Complete</span
+              >
+            </div>
+          </a>
+        </div>
+
+        <div
+          class="dashboard-sidebar"
+          style="
+            margin-top: 3rem;
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+          "
+        >
+          <h3
+            style="
+              margin-bottom: 1rem;
+              color: var(--text-primary);
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+            "
+          >
+            <i class="fas fa-lightbulb" style="color: var(--warning-color)"></i>
+            Quick Tips
+          </h3>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+              gap: 1rem;
+            "
+          >
+            <div
+              style="
+                background: rgba(59, 130, 246, 0.1);
+                padding: 1rem;
+                border-radius: var(--radius-md);
+                border-left: 4px solid #3b82f6;
+              "
+            >
+              <p
+                style="
+                  margin: 0;
+                  font-size: 0.9rem;
+                  color: var(--text-secondary);
+                "
+              >
+                Complete all Digital Shield lessons to earn the Cyber Guardian
+                badge!
+              </p>
+            </div>
+            <div
+              style="
+                background: rgba(16, 185, 129, 0.1);
+                padding: 1rem;
+                border-radius: var(--radius-md);
+                border-left: 4px solid #10b981;
+              "
+            >
+              <p
+                style="
+                  margin: 0;
+                  font-size: 0.9rem;
+                  color: var(--text-secondary);
+                "
+              >
+                Your progress is saved automatically. Come back anytime!
+              </p>
+            </div>
+            <div
+              style="
+                background: rgba(245, 158, 11, 0.1);
+                padding: 1rem;
+                border-radius: var(--radius-md);
+                border-left: 4px solid #f59e0b;
+              "
+            >
+              <p
+                style="
+                  margin: 0;
+                  font-size: 0.9rem;
+                  color: var(--text-secondary);
+                "
+              >
+                Try the chatbot in Digital Shield for personalized security
+                tips.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <footer class="footer" role="contentinfo" style="margin-top: 3rem;">
-    <div class="container">
-      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
-        <p>&copy; 2025 UnifiedX. All rights reserved.</p>
-        <div class="social-links">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-bottom" style="border-top: none; padding-top: 0">
+          <p>&copy; 2025 UnifiedX. All rights reserved.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="js/theme-manager.js"></script>
-  <script src="js/auth-simulator.js"></script>
-  <script src="js/main.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      if (typeof AuthSimulator !== 'undefined' && !AuthSimulator.isAuthenticated()) {
-        window.location.href = 'login.html';
-      }
-    });
-  </script>
-</body>
+    <script src="js/theme-manager.js"></script>
+    <script src="js/auth-simulator.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (
+          typeof AuthSimulator !== "undefined" &&
+          !AuthSimulator.isAuthenticated()
+        ) {
+          window.location.href = "login.html";
+        }
+      });
+    </script>
+  </body>
 </html>

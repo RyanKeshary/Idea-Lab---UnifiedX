@@ -1,300 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Digital Shield - Learn cybersecurity with interactive lessons and AI chatbot">
-  <title>Digital Shield - UnifiedX</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="css/themes.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/responsive.css">
-</head>
-<body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Digital Shield - Learn cybersecurity with interactive lessons and AI chatbot"
+    />
+    <title>Digital Shield - UnifiedX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/themes.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <header class="header scrolled" role="banner">
-    <div class="header-content">
-      <a href="index.html" class="logo" aria-label="UnifiedX Home">
-        <div class="logo-icon">
-          <i class="fas fa-city"></i>
-        </div>
-        <span>UnifiedX</span>
-      </a>
-
-      <nav class="nav-menu" role="navigation" aria-label="Main navigation">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="dashboard.html" class="nav-link">Dashboard</a>
-        <a href="transit.html" class="nav-link">Transit</a>
-        <a href="digitalshield.html" class="nav-link active">Shield</a>
-        <a href="udyamhub.html" class="nav-link">Udyam</a>
-      </nav>
-
-      <div class="nav-actions">
-        <button class="theme-toggle btn-icon" aria-label="Toggle dark mode">
-          <i class="fas fa-moon"></i>
-          <i class="fas fa-sun"></i>
-        </button>
-        
-        <div class="auth-only user-menu" style="display: none;">
-          <div class="user-avatar" tabindex="0" role="button" aria-haspopup="true" aria-label="User menu">
-            U
+    <header class="header scrolled" role="banner">
+      <div class="header-content">
+        <a href="index.html" class="logo" aria-label="UnifiedX Home">
+          <div class="logo-icon">
+            <i class="fas fa-city"></i>
           </div>
-          <div class="user-dropdown" role="menu">
-            <div class="user-dropdown-header">
-              <h4 class="user-name">User</h4>
-              <p class="user-email">user@example.com</p>
+          <span>UnifiedX</span>
+        </a>
+
+        <nav class="nav-menu" role="navigation" aria-label="Main navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="dashboard.html" class="nav-link">Dashboard</a>
+          <a href="transit.html" class="nav-link">Transit</a>
+          <a href="digitalshield.html" class="nav-link active">Shield</a>
+          <a href="udyamhub.html" class="nav-link">Udyam</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="theme-toggle btn-icon" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          </button>
+
+          <div class="auth-only user-menu" style="display: none">
+            <div
+              class="user-avatar"
+              tabindex="0"
+              role="button"
+              aria-haspopup="true"
+              aria-label="User menu"
+            >
+              U
             </div>
-            <div class="user-dropdown-menu">
-              <a href="dashboard.html" role="menuitem"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
-              <button class="logout-btn logout" role="menuitem"><i class="fas fa-sign-out-alt"></i> Logout</button>
+            <div class="user-dropdown" role="menu">
+              <div class="user-dropdown-header">
+                <h4 class="user-name">User</h4>
+                <p class="user-email">user@example.com</p>
+              </div>
+              <div class="user-dropdown-menu">
+                <a href="dashboard.html" role="menuitem"
+                  ><i class="fas fa-tachometer-alt"></i> Dashboard</a
+                >
+                <button class="logout-btn logout" role="menuitem">
+                  <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="guest-only">
-          <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
-        </div>
+          <div class="guest-only">
+            <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
+          </div>
 
-        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+          <button
+            class="hamburger"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <nav class="mobile-menu" role="navigation" aria-label="Mobile navigation">
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="dashboard.html" class="nav-link">Dashboard</a>
-    <a href="transit.html" class="nav-link">Transit</a>
-    <a href="digitalshield.html" class="nav-link active">Shield</a>
-    <a href="udyamhub.html" class="nav-link">Udyam</a>
-  </nav>
+    <nav class="mobile-menu" role="navigation" aria-label="Mobile navigation">
+      <button class="menu-close-btn" aria-label="Close menu">
+        <i class="fas fa-times"></i>
+      </button>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
+      <a href="transit.html" class="nav-link">Transit</a>
+      <a href="digitalshield.html" class="nav-link active">Shield</a>
+      <a href="udyamhub.html" class="nav-link">Udyam</a>
+    </nav>
 
-  <main id="main-content" class="module-page">
-    <div class="container">
-      <div class="page-header">
-        <div class="page-header-icon shield">
-          <i class="fas fa-shield-alt"></i>
-        </div>
-        <div class="page-header-text">
-          <h1>Digital Shield</h1>
-          <p>Learn to protect yourself online with interactive cybersecurity lessons</p>
-        </div>
-      </div>
-
-      <div class="shield-content">
-        <div class="lessons-section">
-          <h3><i class="fas fa-book-open"></i> Security Lessons</h3>
-          <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Complete these lessons to build your cybersecurity knowledge and earn badges.</p>
-          
-          <div class="lesson-list">
-            <div class="lesson-item completed" data-lesson="phishing">
-              <div class="lesson-icon">
-                <i class="fas fa-check"></i>
-              </div>
-              <div class="lesson-content">
-                <h4>Identifying Phishing Emails</h4>
-                <p>Learn to spot fake emails and protect your inbox</p>
-              </div>
-              <div class="lesson-status">
-                <i class="fas fa-check-circle"></i>
-              </div>
-            </div>
-
-            <div class="lesson-item completed" data-lesson="passwords">
-              <div class="lesson-icon">
-                <i class="fas fa-check"></i>
-              </div>
-              <div class="lesson-content">
-                <h4>Creating Strong Passwords</h4>
-                <p>Build unbreakable passwords that keep hackers out</p>
-              </div>
-              <div class="lesson-status">
-                <i class="fas fa-check-circle"></i>
-              </div>
-            </div>
-
-            <div class="lesson-item" data-lesson="2fa">
-              <div class="lesson-icon">
-                <i class="fas fa-lock"></i>
-              </div>
-              <div class="lesson-content">
-                <h4>Two-Factor Authentication</h4>
-                <p>Add an extra layer of security to your accounts</p>
-              </div>
-              <div class="lesson-status">
-                <i class="fas fa-play-circle"></i>
-              </div>
-            </div>
-
-            <div class="lesson-item" data-lesson="social">
-              <div class="lesson-icon">
-                <i class="fas fa-users"></i>
-              </div>
-              <div class="lesson-content">
-                <h4>Social Media Safety</h4>
-                <p>Stay safe while staying connected online</p>
-              </div>
-              <div class="lesson-status">
-                <i class="fas fa-play-circle"></i>
-              </div>
-            </div>
-
-            <div class="lesson-item" data-lesson="scams">
-              <div class="lesson-icon">
-                <i class="fas fa-phone-slash"></i>
-              </div>
-              <div class="lesson-content">
-                <h4>Recognizing Scam Calls</h4>
-                <p>Protect yourself from phone fraud and OTP scams</p>
-              </div>
-              <div class="lesson-status">
-                <i class="fas fa-play-circle"></i>
-              </div>
-            </div>
-
-            <div class="lesson-item" data-lesson="shopping">
-              <div class="lesson-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </div>
-              <div class="lesson-content">
-                <h4>Safe Online Shopping</h4>
-                <p>Shop securely and avoid fraudulent websites</p>
-              </div>
-              <div class="lesson-status">
-                <i class="fas fa-play-circle"></i>
-              </div>
-            </div>
+    <main id="main-content" class="module-page">
+      <div class="container">
+        <div class="page-header">
+          <div class="page-header-icon shield">
+            <i class="fas fa-shield-alt"></i>
           </div>
-
-          <div style="margin-top: 2rem; padding: 1.5rem; background: var(--bg-secondary); border-radius: var(--radius-lg);">
-            <h4 style="margin-bottom: 0.5rem;"><i class="fas fa-robot"></i> Need Help?</h4>
-            <p style="color: var(--text-muted); margin-bottom: 1rem;">Chat with Mira, our AI security assistant, for personalized tips and guidance.</p>
-            <button class="btn btn-primary" onclick="ChatBot.open()">
-              <i class="fas fa-comment-dots"></i> Open Chat Assistant
-            </button>
-          </div>
-        </div>
-
-        <div class="progress-section">
-          <h3><i class="fas fa-chart-line"></i> Your Progress</h3>
-          
-          <div class="shield-score">
-            <h2>250</h2>
-            <p>Shield Points</p>
-          </div>
-
-          <div style="margin-bottom: 1.5rem;">
-            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
-              <span>Lessons Completed</span>
-              <span>2/6</span>
-            </div>
-            <div class="progress-bar">
-              <div class="progress-fill" style="width: 33%;"></div>
-            </div>
-          </div>
-
-          <h4 style="margin-bottom: 1rem;"><i class="fas fa-medal"></i> Achievements</h4>
-          <div class="achievement-list">
-            <div class="achievement-item">
-              <div class="achievement-icon">
-                <i class="fas fa-star"></i>
-              </div>
-              <div class="achievement-content">
-                <h5>First Steps</h5>
-                <p>Complete your first lesson</p>
-              </div>
-            </div>
-
-            <div class="achievement-item">
-              <div class="achievement-icon">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div class="achievement-content">
-                <h5>Phishing Expert</h5>
-                <p>Master email security</p>
-              </div>
-            </div>
-
-            <div class="achievement-item locked">
-              <div class="achievement-icon">
-                <i class="fas fa-lock"></i>
-              </div>
-              <div class="achievement-content">
-                <h5>Password Pro</h5>
-                <p>Create 5 strong passwords</p>
-              </div>
-            </div>
-
-            <div class="achievement-item locked">
-              <div class="achievement-icon">
-                <i class="fas fa-lock"></i>
-              </div>
-              <div class="achievement-content">
-                <h5>Cyber Guardian</h5>
-                <p>Complete all lessons</p>
-              </div>
-            </div>
-          </div>
-
-          <div style="margin-top: 1.5rem; padding: 1rem; background: var(--bg-secondary); border-radius: var(--radius-md); text-align: center;">
-            <p style="font-size: 0.875rem; color: var(--text-muted); margin: 0;">
-              <i class="fas fa-info-circle"></i> Complete more lessons to unlock achievements and earn points!
+          <div class="page-header-text">
+            <h1>Digital Shield</h1>
+            <p>
+              Learn to protect yourself online with interactive cybersecurity
+              lessons
             </p>
           </div>
         </div>
-      </div>
-    </div>
-  </main>
 
-  <div class="chatbot-widget" aria-label="Chat assistant">
-    <div class="chatbot-window" role="dialog" aria-labelledby="chatbot-title">
-      <div class="chatbot-header">
-        <div class="chatbot-avatar">
-          <i class="fas fa-shield-alt"></i>
-        </div>
-        <div class="chatbot-info">
-          <h4 id="chatbot-title">Mira</h4>
-          <p>Your Security Assistant</p>
-        </div>
-      </div>
-      <div class="chatbot-messages" role="log" aria-live="polite"></div>
-      <div class="quick-replies"></div>
-      <div class="chatbot-input">
-        <input type="text" placeholder="Type your question..." aria-label="Chat message input">
-        <button type="button" aria-label="Send message">
-          <i class="fas fa-paper-plane"></i>
-        </button>
-      </div>
-    </div>
-    <button class="chatbot-toggle" aria-label="Toggle chat assistant" aria-expanded="false">
-      <i class="fas fa-comment-dots"></i>
-      <i class="fas fa-times"></i>
-    </button>
-  </div>
+        <div class="shield-content">
+          <div class="lessons-section">
+            <h3><i class="fas fa-book-open"></i> Security Lessons</h3>
+            <p style="color: var(--text-muted); margin-bottom: 1.5rem">
+              Complete these lessons to build your cybersecurity knowledge and
+              earn badges.
+            </p>
 
-  <footer class="footer" role="contentinfo" style="margin-top: 3rem;">
-    <div class="container">
-      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
-        <p>&copy; 2025 UnifiedX. All rights reserved.</p>
-        <div class="social-links">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <div class="lesson-list">
+              <div class="lesson-item completed" data-lesson="phishing">
+                <div class="lesson-icon">
+                  <i class="fas fa-check"></i>
+                </div>
+                <div class="lesson-content">
+                  <h4>Identifying Phishing Emails</h4>
+                  <p>Learn to spot fake emails and protect your inbox</p>
+                </div>
+                <div class="lesson-status">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+              </div>
+
+              <div class="lesson-item completed" data-lesson="passwords">
+                <div class="lesson-icon">
+                  <i class="fas fa-check"></i>
+                </div>
+                <div class="lesson-content">
+                  <h4>Creating Strong Passwords</h4>
+                  <p>Build unbreakable passwords that keep hackers out</p>
+                </div>
+                <div class="lesson-status">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+              </div>
+
+              <div class="lesson-item" data-lesson="2fa">
+                <div class="lesson-icon">
+                  <i class="fas fa-lock"></i>
+                </div>
+                <div class="lesson-content">
+                  <h4>Two-Factor Authentication</h4>
+                  <p>Add an extra layer of security to your accounts</p>
+                </div>
+                <div class="lesson-status">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </div>
+
+              <div class="lesson-item" data-lesson="social">
+                <div class="lesson-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div class="lesson-content">
+                  <h4>Social Media Safety</h4>
+                  <p>Stay safe while staying connected online</p>
+                </div>
+                <div class="lesson-status">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </div>
+
+              <div class="lesson-item" data-lesson="scams">
+                <div class="lesson-icon">
+                  <i class="fas fa-phone-slash"></i>
+                </div>
+                <div class="lesson-content">
+                  <h4>Recognizing Scam Calls</h4>
+                  <p>Protect yourself from phone fraud and OTP scams</p>
+                </div>
+                <div class="lesson-status">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </div>
+
+              <div class="lesson-item" data-lesson="shopping">
+                <div class="lesson-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="lesson-content">
+                  <h4>Safe Online Shopping</h4>
+                  <p>Shop securely and avoid fraudulent websites</p>
+                </div>
+                <div class="lesson-status">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="
+                margin-top: 2rem;
+                padding: 1.5rem;
+                background: var(--bg-secondary);
+                border-radius: var(--radius-lg);
+              "
+            >
+              <h4 style="margin-bottom: 0.5rem">
+                <i class="fas fa-robot"></i> Need Help?
+              </h4>
+              <p style="color: var(--text-muted); margin-bottom: 1rem">
+                Chat with Mira, our AI security assistant, for personalized tips
+                and guidance.
+              </p>
+              <button class="btn btn-primary" onclick="ChatBot.open()">
+                <i class="fas fa-comment-dots"></i> Open Chat Assistant
+              </button>
+            </div>
+          </div>
+
+          <div class="progress-section">
+            <h3><i class="fas fa-chart-line"></i> Your Progress</h3>
+
+            <div class="shield-score">
+              <h2>250</h2>
+              <p>Shield Points</p>
+            </div>
+
+            <div style="margin-bottom: 1.5rem">
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 0.5rem;
+                "
+              >
+                <span>Lessons Completed</span>
+                <span>2/6</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 33%"></div>
+              </div>
+            </div>
+
+            <h4 style="margin-bottom: 1rem">
+              <i class="fas fa-medal"></i> Achievements
+            </h4>
+            <div class="achievement-list">
+              <div class="achievement-item">
+                <div class="achievement-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="achievement-content">
+                  <h5>First Steps</h5>
+                  <p>Complete your first lesson</p>
+                </div>
+              </div>
+
+              <div class="achievement-item">
+                <div class="achievement-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="achievement-content">
+                  <h5>Phishing Expert</h5>
+                  <p>Master email security</p>
+                </div>
+              </div>
+
+              <div class="achievement-item locked">
+                <div class="achievement-icon">
+                  <i class="fas fa-lock"></i>
+                </div>
+                <div class="achievement-content">
+                  <h5>Password Pro</h5>
+                  <p>Create 5 strong passwords</p>
+                </div>
+              </div>
+
+              <div class="achievement-item locked">
+                <div class="achievement-icon">
+                  <i class="fas fa-lock"></i>
+                </div>
+                <div class="achievement-content">
+                  <h5>Cyber Guardian</h5>
+                  <p>Complete all lessons</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="
+                margin-top: 1.5rem;
+                padding: 1rem;
+                background: var(--bg-secondary);
+                border-radius: var(--radius-md);
+                text-align: center;
+              "
+            >
+              <p
+                style="font-size: 0.875rem; color: var(--text-muted); margin: 0"
+              >
+                <i class="fas fa-info-circle"></i> Complete more lessons to
+                unlock achievements and earn points!
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </main>
 
-  <script src="js/theme-manager.js"></script>
-  <script src="js/auth-simulator.js"></script>
-  <script src="js/chatbot.js"></script>
-  <script src="js/main.js"></script>
-</body>
+    <div class="chatbot-widget" aria-label="Chat assistant">
+      <div class="chatbot-window" role="dialog" aria-labelledby="chatbot-title">
+        <div class="chatbot-header">
+          <div class="chatbot-avatar">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="chatbot-info">
+            <h4 id="chatbot-title">Mira</h4>
+            <p>Your Security Assistant</p>
+          </div>
+          <button
+            class="btn-icon chatbot-close-btn"
+            aria-label="Close chat"
+            style="color: white; margin-left: auto"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="chatbot-messages" role="log" aria-live="polite"></div>
+        <div class="quick-replies"></div>
+        <div class="chatbot-input">
+          <input
+            type="text"
+            placeholder="Type your question..."
+            aria-label="Chat message input"
+          />
+          <button type="button" aria-label="Send message">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+      <button
+        class="chatbot-toggle"
+        aria-label="Toggle chat assistant"
+        aria-expanded="false"
+      >
+        <i class="fas fa-comment-dots"></i>
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <footer class="footer" role="contentinfo" style="margin-top: 3rem">
+      <div class="container">
+        <div class="footer-bottom" style="border-top: none; padding-top: 0">
+          <p>&copy; 2025 UnifiedX. All rights reserved.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/theme-manager.js"></script>
+    <script src="js/auth-simulator.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

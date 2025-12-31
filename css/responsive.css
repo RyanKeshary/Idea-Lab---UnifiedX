@@ -1,3 +1,12 @@
+/* Fluid Typography & Variables */
+:root {
+  /* clamp(min, preferred, max) */
+  --fs-h1: clamp(2rem, 5vw + 1rem, 3.5rem);
+  --fs-h2: clamp(1.75rem, 4vw + 0.5rem, 2.5rem);
+  --fs-h3: clamp(1.25rem, 3vw + 0.5rem, 1.75rem);
+  --fs-body: clamp(0.875rem, 1vw + 0.75rem, 1rem);
+}
+
 @media (max-width: 1600px) {
   .container {
     max-width: 1200px;
@@ -8,287 +17,374 @@
   .container {
     max-width: 1024px;
   }
-  
-  .hero-title {
-    font-size: 3rem;
-  }
-  
-  .features-grid,
-  .modules-grid {
-    gap: 1.5rem;
-  }
-  
-  .footer-content {
-    grid-template-columns: 1.5fr 1fr 1fr 1fr;
-  }
 }
 
 @media (max-width: 1024px) {
   .container {
-    max-width: 768px;
+    max-width: 90%; /* More fluid container */
+    padding: 0 2rem;
   }
-  
-  .hero-content {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 3rem;
-  }
-  
-  .hero-description {
-    margin: 0 auto 2rem;
-  }
-  
-  .hero-buttons {
-    justify-content: center;
-  }
-  
-  .hero-illustration {
-    max-width: 400px;
-    height: 300px;
-    margin: 0 auto;
-  }
-  
-  .hero-illustration i {
-    font-size: 6rem;
-  }
-  
+
+  /* Improved Grid Responsiveness for Tablets */
   .features-grid,
   .modules-grid,
   .dashboard-modules {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
-  
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
+
+  .stats-grid,
   .dashboard-stats {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .footer-content {
     grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
-  
-  .shield-content {
-    grid-template-columns: 1fr;
-  }
-  
-  .progress-section {
-    order: -1;
-  }
-  
-  .store-builder-content {
-    grid-template-columns: 1fr;
-  }
-  
-  .components-panel {
-    position: static;
-  }
-  
-  .component-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-  
-  .station-info-grid {
+
+  /* Ensure Modules & Lists don't get too thin */
+  .station-list,
+  .products-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 768px) {
-  html {
-    font-size: 15px;
+  /* Fluid Body Type handled by :root but ensured here if needed */
+  body {
+    font-size: var(--fs-body);
   }
-  
+
+  h1 {
+    font-size: var(--fs-h1);
+  }
+  h2 {
+    font-size: var(--fs-h2);
+  }
+  h3 {
+    font-size: var(--fs-h3);
+  }
+
+  /* Close Button Styles */
+  .menu-close-btn {
+    align-self: flex-end; /* Align to right */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    cursor: pointer;
+    padding: 0.5rem;
+    margin: 1rem 0 2rem; /* Add margin to separate from top/content */
+    display: block;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+  }
+
+  .menu-close-btn:hover {
+    background-color: var(--bg-tertiary);
+  }
+
   .nav-menu {
     display: none;
   }
-  
+
+  /* Hide Desktop Buttons on Mobile to prevent clutter */
+  .header .guest-only,
+  .header .auth-only,
+  .header .user-menu {
+    display: none !important;
+  }
+
+  /* Ensure nav actions (toggle + hamburger) are aligned */
+  .nav-actions {
+    gap: 0.5rem;
+  }
+
   .hamburger {
     display: flex;
+    z-index: 1001; /* Ensure above mobile menu */
   }
-  
-  .hero {
-    min-height: auto;
-    padding: 6rem 0 4rem;
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0; /* Slide from right */
+    bottom: 0;
+    left: 20%; /* wider overlay for better focus */
+    background: transparent; /* Transparent so we can layer pseudos */
+    padding: 2rem; /* Balanced padding */
+    transform: translateX(100%);
+    /* Wait for transform to finish before hiding visibility */
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 0s linear 0.3s;
+    z-index: 1000;
+    flex-direction: column;
+    gap: 1rem;
+    display: flex; /* Always display, just hide via transform */
+    visibility: hidden; /* Hide cleanly */
   }
-  
-  .hero-title {
-    font-size: 2.5rem;
-  }
-  
-  .hero-badge {
-    font-size: 0.75rem;
-  }
-  
-  .hero-description {
+
+  /* Improved Link Styling */
+  .mobile-menu .nav-link {
     font-size: 1.1rem;
+    font-weight: 500; /* Slightly lighter weight */
+    color: var(--text-primary);
+    padding: 0.75rem 0; /* Reduced padding */
+    border-bottom: 1px solid var(--border-color); /* Bring back separator */
+    transition: color 0.2s;
+    border-radius: 0; /* Remove radius */
   }
-  
-  .hero-illustration {
-    max-width: 300px;
-    height: 250px;
+
+  .mobile-menu .nav-link:hover,
+  .mobile-menu .nav-link.active {
+    background-color: transparent; /* No background hover */
+    color: var(--primary-color);
   }
-  
-  .hero-illustration i {
-    font-size: 5rem;
+
+  /* Guest/Auth buttons in menu */
+  .mobile-menu .btn {
+    width: 100%;
+    margin-top: 0.5rem;
+    justify-content: center;
   }
-  
-  .section {
-    padding: 3rem 0;
+
+  /* Normal stacking for buttons */
+  .mobile-menu .guest-only,
+  .mobile-menu .auth-only {
+    margin-top: 1rem; /* Standard margin */
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
   }
-  
-  .section-title h2 {
-    font-size: 1.75rem;
+
+  /* Overlay (Unfocused Area) */
+  .mobile-menu::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: -100vw; /* Extend to cover rest of screen */
+    width: 200vw; /* Ensure full coverage */
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Softer backdrop */
+    backdrop-filter: blur(4px); /* Modern blur effect */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: -2; /* Behind everything */
   }
-  
+
+  /* Panel Background (Focused Area) */
+  .mobile-menu::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #ffffff; /* Solid White Panel */
+    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.2);
+    z-index: -1; /* Behind content, In front of overlay */
+  }
+
+  [data-theme="dark"] .mobile-menu::after {
+    background: var(--bg-primary);
+    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.5);
+  }
+
+  [data-theme="dark"] .mobile-menu .nav-link {
+    color: var(--text-primary);
+  }
+
+  .mobile-menu.active {
+    transform: translateX(0);
+    visibility: visible;
+    /* Reset visibility delay to 0s so it appears immediately */
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 0s linear 0s;
+  }
+
+  .mobile-menu.active::before {
+    opacity: 1;
+    pointer-events: auto; /* Catch clicks to close */
+  }
+
+  .hero {
+    padding: 8rem 0 4rem;
+    min-height: auto;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 3rem;
+  }
+
   .features-grid,
   .modules-grid,
-  .dashboard-modules {
+  .dashboard-modules,
+  .station-list,
+  .products-grid,
+  .shield-content,
+  .store-builder-content {
     grid-template-columns: 1fr;
   }
-  
+
   .feature-card,
   .module-card {
     text-align: left;
   }
-  
+
   .feature-card .card-icon {
     margin: 0 0 1rem 0;
   }
-  
+
   .cta-title {
     font-size: 2rem;
   }
-  
+
   .footer-content {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .footer-brand {
     max-width: 100%;
   }
-  
+
   .footer-bottom {
     flex-direction: column;
     gap: 1rem;
     text-align: center;
   }
-  
+
   .auth-card {
     padding: 1.5rem;
   }
-  
+
   .auth-header h1 {
     font-size: 1.5rem;
   }
-  
+
   .dashboard-stats {
     grid-template-columns: 1fr;
   }
-  
+
   .page-header {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .map-wrapper {
     height: 300px;
   }
-  
+
   .station-list {
     grid-template-columns: 1fr;
   }
-  
+
   .station-info-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .component-list {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .chatbot-window {
     width: 320px;
     right: -1rem;
   }
-  
+
   .chatbot-messages {
     max-height: 250px;
   }
-  
+
   .products-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
-  
+
   .catalog-header {
     flex-direction: column;
     gap: 1rem;
     align-items: flex-start;
   }
-  
-  h1 { font-size: 2rem; }
-  h2 { font-size: 1.75rem; }
-  h3 { font-size: 1.25rem; }
+
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
 }
 
 @media (max-width: 480px) {
   html {
     font-size: 14px;
   }
-  
+
   .container {
     padding: 0 1rem;
   }
-  
+
+  .auth-page {
+    padding: 1rem;
+  }
+
   .hero-title {
     font-size: 2rem;
   }
-  
+
   .hero-buttons {
     flex-direction: column;
   }
-  
+
   .hero-buttons .btn {
     width: 100%;
   }
-  
+
   .hero-illustration {
     max-width: 250px;
     height: 200px;
   }
-  
+
   .hero-illustration i {
     font-size: 4rem;
   }
-  
+
   .btn-lg {
     padding: 0.875rem 1.5rem;
     font-size: 1rem;
   }
-  
+
   .module-icon {
     width: 60px;
     height: 60px;
     font-size: 1.5rem;
   }
-  
+
   .stat-number {
     font-size: 2.5rem;
   }
-  
+
   .component-list {
     grid-template-columns: 1fr;
   }
-  
+
   .chatbot-widget {
     bottom: 1rem;
     right: 1rem;
   }
-  
+
   .chatbot-window {
     position: fixed;
     bottom: 0;
@@ -298,28 +394,28 @@
     max-height: 70vh;
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
   }
-  
+
   .products-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .filter-btn {
     padding: 0.375rem 0.75rem;
     font-size: 0.75rem;
   }
-  
+
   .error-code {
     font-size: 5rem;
   }
-  
+
   .welcome-message h1 {
     font-size: 1.5rem;
   }
-  
+
   .quick-replies {
     padding: 0 0.75rem 0.75rem;
   }
-  
+
   .quick-reply {
     padding: 0.375rem 0.625rem;
     font-size: 0.75rem;
@@ -330,28 +426,28 @@
   html {
     font-size: 13px;
   }
-  
+
   .container {
     padding: 0 0.75rem;
   }
-  
+
   .hero-title {
     font-size: 1.75rem;
   }
-  
+
   .hero-illustration {
     max-width: 200px;
     height: 160px;
   }
-  
+
   .hero-illustration i {
     font-size: 3rem;
   }
-  
+
   .auth-card {
     padding: 1.25rem;
   }
-  
+
   .btn {
     padding: 0.625rem 1rem;
   }
@@ -377,28 +473,28 @@
   .mobile-menu {
     display: none !important;
   }
-  
+
   .hero {
     background: white !important;
     color: black !important;
     padding: 2rem 0 !important;
   }
-  
+
   .hero-text {
     color: black !important;
   }
-  
+
   .hero-title,
   .hero-description {
     color: black !important;
     -webkit-text-fill-color: black !important;
   }
-  
+
   body {
     background: white !important;
     color: black !important;
   }
-  
+
   .card,
   .auth-card,
   .dashboard-module-card {
@@ -419,7 +515,7 @@
   .product-card:hover {
     transform: none;
   }
-  
+
   .tooltip::after {
     display: none;
   }
@@ -429,8 +525,45 @@
   .btn-primary:hover {
     transform: translateY(-2px);
   }
-  
+
   .card:hover {
     transform: translateY(-4px);
+  }
+
+  /* Udyam Store Builder Mobile */
+  .store-builder-content {
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+  }
+
+  .components-panel {
+    width: 100%;
+    /* Reset sticky for mobile */
+    position: relative;
+    top: 0;
+    height: auto;
+    max-height: 300px; /* Limit height so it scrolls internally on mobile too? Or User said "components scroll not heading" */
+    /* If user wants sticky heading while scrolling PAGE, it needs sticky. 
+       If user wants panel to be scrollable area, then heading sticky inside panel. 
+       User said "components heading should stay and components ... should scroll". 
+       Implies internal scrolling or page sticky. 
+       Let's stick with internal scrolling for mobile panel to keep it compact? 
+       Actually user complained about "glitchy scrolling" before, so we made it stacked.
+       Let's make it stacked but with a max-height and internal scroll, so Heading sticks. */
+    overflow-y: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 1rem;
+  }
+
+  /* Reset padding for sticky header on mobile to fit */
+  .components-panel h3 {
+    top: 0;
+    z-index: 20;
+  }
+
+  .builder-canvas {
+    min-height: 500px;
   }
 }
